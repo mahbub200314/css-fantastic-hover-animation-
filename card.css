@@ -1,0 +1,131 @@
+*{
+    padding:0%; margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    
+}
+.card{
+    width:200px;
+    height:200px;
+    border:2px solid transparent;
+    border-radius:30px;
+    
+    position: relative;
+    transition: 1s;
+    overflow: hidden;
+    
+}
+
+.background{
+
+    position: absolute;
+    height:100%;
+    width:100%;
+    background: radial-gradient(circle at 100% 110%, #fdeb82, #f78fad);
+
+
+
+}
+
+.logo  {
+    color:white;
+    right:50%;
+    bottom:50%;
+    position: absolute;
+    font-size: 1.5rem;
+    transform: translate(50% , 50%);
+    transition: 0.5s ease-in-out;
+}
+
+
+
+.card:hover .logo{
+    right:10%;
+    bottom:10%;
+    transition: 1s;
+}
+
+.card:hover #seed{
+    color:aqua;
+    transition: 1s;
+}
+
+.box{
+    position: absolute;
+    background: #ffffff63;
+    padding: 10px;
+    text-align: right;
+    border-top:2px solid white;
+    border-right:1px solid white;
+    border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+    box-shadow: #6464645d -7px 7px 29px 0;
+transition: 1s;
+    
+
+
+}
+
+
+.box1{
+    width:70%; 
+    height:70%;
+    bottom:-70%;
+    left: -70%;
+    transition-delay: 0s;
+
+}
+
+.box2{
+    width:50%; 
+    height:50%;
+    bottom:-50%;
+    left: -50%;
+    transition-delay: .2s;
+
+}
+
+.box3{
+    width:30%; 
+    height:30%;
+    bottom:-30%;
+    left: -30%;
+    transition-delay: .4s;
+
+}
+
+/*hover */
+.card:hover{
+    transform: scale(1.2);
+
+}
+
+.card:hover .box{
+    bottom:-1px;
+    left:-1px;
+}
+
+
+.box1:hover{
+    color: rgb(248, 99, 99);
+    background-color: #f78fad;
+}
+
+.box2:hover{
+    color:aqua;
+    background-color: palevioletred;
+
+
+}
+.box3:hover{
+    background-color: rgb(239, 102, 186);
+    color:gray
+
+}
+
